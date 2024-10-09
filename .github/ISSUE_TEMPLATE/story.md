@@ -2,7 +2,7 @@
 name: Story
 about: Specifies requirements for a new feature entering development or a modification
   to an existing features' functionality.
-title: "[STORY]"
+title: "[STORY] "
 labels: ''
 assignees: ''
 
