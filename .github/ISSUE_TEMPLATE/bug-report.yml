@@ -1,0 +1,31 @@
+name: "Bug Report"
+description: "Create a bug report for problems with existing functionality."
+title: "[BUG]: Provide a brief description"
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Bug Description"
+      description: "Provide a detailed description of the bug."
+    validations:
+      required: true
+  - type: textarea
+    id: repro-steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Provide a step-by-step guide to reproduce the issue."
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Expected Behavior"
+      description: "What did you expect to happen instead?"
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
+      description: "Any other relevant information or logs."

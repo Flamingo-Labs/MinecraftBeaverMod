@@ -1,0 +1,54 @@
+name: "Feature Request"
+description: "Suggest a new feature or improvement for the Minecraft Beaver Mod."
+title: "[REQUEST]: Describe your feature in a few words"
+labels: [ "request" ]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## What's your idea for a new feature?
+        Provide a brief description of the feature you would like to see in the mod. This could be a new item, block,
+        mob, mechanic, or improvement to existing content.
+
+  - type: textarea
+    id: feature-summary
+    attributes:
+      label: "Feature Summary"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## How would it work in the game?
+        Describe in detail how the feature should work in Minecraft. Consider its crafting recipe, interaction with
+        other blocks or items, effects on gameplay, etc.
+
+  - type: textarea
+    id: feature-details
+    attributes:
+      label: "Feature Details"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Why do you think this feature should be added?
+        Explain why this feature would make the mod more enjoyable or improve the gameplay experience.
+
+  - type: textarea
+    id: feature-benefits
+    attributes:
+      label: "Benefits and Impact"
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Additional Context
+        If you have any screenshots, mockups, or extra details that can help explain your feature, include them here.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
