@@ -1,0 +1,36 @@
+name: "Story"
+description: "⚠️ Admin use only. ⚠️ Non-admin submissions will be auto-deleted. Please use Bug Report or Feature 
+Request instead."
+title: "[STORY]: Provide a brief description"
+labels: ["story"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚠️ **Admin-Only Notice** ⚠️
+        This form is reserved for repository administrators only. 
+
+        If you are not an admin, your submission will be **automatically deleted**. 
+        Please submit a **Bug Report** or **Feature Request** instead. Thank you for your understanding!
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Feature Description"
+      description: "Provide detailed requirements or changes."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional Context"
+      description: "Provide any additional information that might help understand the feature."
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: "Acceptance Criteria"
+      description: "List testing scenarios to confirm feature functionality."
+    validations:
+      required: true
