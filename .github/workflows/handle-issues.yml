@@ -7,7 +7,8 @@ on:
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   GH_REPO: ${{ github.repository }}
-  STORY_CREATED_BY_ADMIN: ${{ contains(github.event.issue.labels.*.name, 'story') && github.event.issue.user.login == 'Madeline-Ellingson' }}
+  IS_STORY: ${{ contains(github.event.issue.labels.*.name, 'story') }}
+  CREATED_BY_ADMIN: ${{ github.event.issue.user.login == 'Madeline-Ellingson' }}
   NUMBER: ${{ github.event.issue.number }}
   BODY: "This issue was automatically deleted because it was submitted by a non-admin user. Please use the Bug Report or Feature Request template instead."
 
@@ -20,14 +21,15 @@ jobs:
 
     steps:
       - name: Comment on the issue if it is a story and was NOT created by an admin
-        if: ${{ env.STORY_CREATED_BY_ADMIN == 'false' }}
+        if: ${{ env.IS_STORY == 'true' && env.CREATED_BY_ADMIN == 'false' }}
         run: gh issue comment "$NUMBER" --body "$BODY"
       - name: Close if the issue is a story and was NOT created by an admin
-        if: ${{ env.STORY_CREATED_BY_ADMIN == 'false' }}
+        if: ${{ env.IS_STORY == 'true' && env.CREATED_BY_ADMIN == 'false' }}
         run: gh issue close "$NUMBER"
-      - name: Add issue to the project
-        if: ${{ env.STORY_CREATED_BY_ADMIN == 'true' || !contains(github.event.issue.labels.*.name, 'story') }}
+      - name: Add issue to the project if it wasn't auto closed
+        if: ${{ env.CREATED_BY_ADMIN == 'true' || env.IS_STORY == 'false' }}
         uses: actions/add-to-project@v1.0.2
         with:
           project-url: https://github.com/orgs/Flamingo-Labs/projects/3
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+
