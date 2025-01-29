@@ -1,4 +1,4 @@
-package net.madellz.beavermod;
+package com.madellz.beavermod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;

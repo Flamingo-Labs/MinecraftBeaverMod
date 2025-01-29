@@ -1,4 +1,4 @@
-package net.madellz.beavermod;
+package com.madellz.beavermod;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
