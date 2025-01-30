@@ -115,6 +115,8 @@ public class BeaverModel extends HierarchicalModel<Beaver>
      * @param pAgeInTicks      The entity's age in ticks, used for time-based animations.
      * @param pNetHeadYaw      The horizontal rotation of the entity's head.
      * @param pHeadPitch       The vertical rotation of the entity's head.
+     *
+     * TODO: #10 Implement Beaver Animations
      */
     @Override
     public void setupAnim(@Nonnull Beaver pEntity, float pLimbSwing, float pLimbSwingAmount, float pAgeInTicks,
