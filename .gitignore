@@ -33,3 +33,7 @@ out/
 
 # Cache of project
 .gradletasknamecache
+
+# development specific
+/run
+/run-data
