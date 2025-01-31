@@ -29,6 +29,6 @@ public class EventHandler
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event)
     {
-        event.put(EntityRegistry.BEAVER.get(), Beaver.createLivingAttributes().build());
+        event.put(EntityRegistry.BEAVER.get(), Beaver.createAttributes().build());
     }
 }
