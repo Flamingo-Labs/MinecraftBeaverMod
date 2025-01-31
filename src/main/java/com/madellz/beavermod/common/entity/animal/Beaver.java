@@ -3,6 +3,8 @@ package com.madellz.beavermod.common.entity.animal;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -39,6 +41,18 @@ public class Beaver extends Animal
     public boolean isFood(@Nonnull ItemStack pStack)
     {
         return false;
+    }
+
+    /**
+     * Creates and returns the set of attributes for the beaver.
+     *
+     * @return A builder for the entity's attributes.
+     *
+     * TODO: Implement beaver specific attributes. Add ticket once created
+     */
+    public static AttributeSupplier.Builder createAttributes() {
+        return Animal.createLivingAttributes()
+                .add(Attributes.FOLLOW_RANGE, 24D);
     }
 
     /**
