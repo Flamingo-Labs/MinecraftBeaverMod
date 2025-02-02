@@ -41,7 +41,7 @@ public class BabyBeaverModel extends HierarchicalModel<Beaver>
     }
 
     /**
-     * Creates and defines the structure of the beaver model.
+     * Creates and defines the structure of the baby beaver model.
      *
      * @return LayerDefinition containing the model structure.
      */
@@ -104,7 +104,7 @@ public class BabyBeaverModel extends HierarchicalModel<Beaver>
     }
 
     /**
-     * Sets up animations for the beaver entity, defining how it moves.
+     * Sets up animations for the baby beaver entity, defining how it moves.
      *
      * @param pEntity          The beaver entity instance.
      * @param pLimbSwing       The swing progress of the entity's limbs.
@@ -123,7 +123,7 @@ public class BabyBeaverModel extends HierarchicalModel<Beaver>
     }
 
     /**
-     * Renders the beaver model to the screen using the provided rendering parameters.
+     * Renders the baby beaver model to the screen using the provided rendering parameters.
      *
      * @param poseStack      The transformation stack for positioning and scaling.
      * @param vertexConsumer The vertex consumer for rendering the model.
@@ -142,7 +142,7 @@ public class BabyBeaverModel extends HierarchicalModel<Beaver>
     }
 
     /**
-     * Retrieves the root model part of the beaver model.
+     * Retrieves the root model part of the baby beaver model.
      *
      * @return The root {@link ModelPart} representing the entire beaver model.
      */

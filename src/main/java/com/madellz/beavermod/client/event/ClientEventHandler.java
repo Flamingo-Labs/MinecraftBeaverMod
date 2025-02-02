@@ -16,9 +16,9 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 /**
- * Handles client-side event registration for the mod.
+ * Handles client-side event registration for the beaver mod.
  * <p>
- * This class ensures that the beaver entity is properly rendered by registering its renderer
+ * This class ensures that the entities within the mod are properly rendered by registering its renderer
  * and model layer definitions. It only runs on the client side.
  * </p>
  */
@@ -26,9 +26,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 public class ClientEventHandler
 {
     /**
-     * Registers the {@link BeaverRenderer} for the {@link Beaver} entity.
+     * Registers the renderers for the entities in the beaver mod.
      * <p>
-     * This method runs during the client setup phase and ensures that the beaver entity is
+     * This method runs during the client setup phase and ensures that the entities in the beaver mod are
      * rendered using the correct model and texture.
      * </p>
      *
@@ -42,11 +42,7 @@ public class ClientEventHandler
     }
 
     /**
-     * Registers the model layer definition for the beaver entity.
-     * <p>
-     * This method ensures that the beaver model is properly registered and can be used
-     * for rendering by defining its model layer.
-     * </p>
+     * Registers the model layer definitions for entities in the beaver mod.
      *
      * @param event The event for registering entity layer definitions.
      */

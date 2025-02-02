@@ -10,7 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 /**
- * Handles the registration of all custom entities in the Beaver Mod.
+ * Handles the registration of all custom entities in the beaver mod.
  */
 public class EntityRegistry
 {

@@ -18,11 +18,7 @@ import net.minecraftforge.fml.common.Mod;
 public class EventHandler
 {
     /**
-     * Registers entity attributes for the beaver entity.
-     * <p>
-     * This method runs during the {@link EntityAttributeCreationEvent} and assigns the
-     * necessary attributes to the beaver, such as movement speed, attack damage, and health.
-     * </p>
+     * Registers entity attributes for the mod entities.
      *
      * @param event The event that handles entity attribute registration.
      */
