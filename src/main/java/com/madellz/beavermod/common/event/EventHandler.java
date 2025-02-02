@@ -30,5 +30,6 @@ public class EventHandler
     public static void registerAttributes(EntityAttributeCreationEvent event)
     {
         event.put(EntityRegistry.BEAVER.get(), Beaver.createAttributes().build());
+        event.put(EntityRegistry.BABY_BEAVER.get(), Beaver.createAttributes().build());
     }
 }

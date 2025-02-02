@@ -25,4 +25,7 @@ public class ModelLayers
      */
     public static final ModelLayerLocation BEAVER_LAYER = new ModelLayerLocation(
             new ResourceLocation(BeaverMod.MOD_ID, "beaver_layer"), "main");
+
+    public static final ModelLayerLocation BABY_BEAVER_LAYER = new ModelLayerLocation(
+            new ResourceLocation(BeaverMod.MOD_ID, "baby_beaver_layer"), "main");
 }

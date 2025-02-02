@@ -2,7 +2,9 @@ package com.madellz.beavermod.client.event;
 
 import com.madellz.beavermod.BeaverMod;
 import com.madellz.beavermod.client.model.ModelLayers;
+import com.madellz.beavermod.client.model.animal.BabyBeaverModel;
 import com.madellz.beavermod.client.model.animal.BeaverModel;
+import com.madellz.beavermod.client.renderer.BabyBeaverRenderer;
 import com.madellz.beavermod.client.renderer.BeaverRenderer;
 import com.madellz.beavermod.common.entity.EntityRegistry;
 import com.madellz.beavermod.common.entity.animal.Beaver;
@@ -36,6 +38,7 @@ public class ClientEventHandler
     public static void onClientSetup(FMLClientSetupEvent event)
     {
         EntityRenderers.register(EntityRegistry.BEAVER.get(), BeaverRenderer::new);
+        EntityRenderers.register(EntityRegistry.BABY_BEAVER.get(), BabyBeaverRenderer::new);
     }
 
     /**
@@ -51,5 +54,6 @@ public class ClientEventHandler
     public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event)
     {
         event.registerLayerDefinition(ModelLayers.BEAVER_LAYER, BeaverModel::createBodyLayer);
+        event.registerLayerDefinition(ModelLayers.BABY_BEAVER_LAYER, BabyBeaverModel::createBodyLayer);
     }
 }
