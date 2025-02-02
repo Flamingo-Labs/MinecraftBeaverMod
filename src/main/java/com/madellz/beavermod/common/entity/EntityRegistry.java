@@ -10,7 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 /**
- * Handles the registration of all custom entities in the Beaver Mod.
+ * Handles the registration of all custom entities in the beaver mod.
  */
 public class EntityRegistry
 {
@@ -20,6 +20,8 @@ public class EntityRegistry
     public static final RegistryObject<EntityType<Beaver>> BEAVER = ENTITY_TYPES.register("beaver",
             () -> EntityType.Builder.of(Beaver::new, MobCategory.CREATURE).sized(.5f, .5f).build("beaver"));
 
+    public static final RegistryObject<EntityType<Beaver>> BABY_BEAVER = ENTITY_TYPES.register("baby_beaver",
+            () -> EntityType.Builder.of(Beaver::new, MobCategory.CREATURE).sized(.25f, .25f).build("baby_beaver"));
     /**
      * Registers the entity types with the provided event bus.
      *
