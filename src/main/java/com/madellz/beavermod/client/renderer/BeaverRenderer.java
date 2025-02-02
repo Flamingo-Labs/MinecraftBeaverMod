@@ -27,7 +27,7 @@ public class BeaverRenderer extends MobRenderer<Beaver, BeaverModel>
      */
     public BeaverRenderer(EntityRendererProvider.Context pContext)
     {
-        super(pContext, new BeaverModel(pContext.bakeLayer(ModelLayers.BEAVER_LAYER)), .5f);
+        super(pContext, new BeaverModel(pContext.bakeLayer(ModelLayers.BEAVER_LAYER)), .45f);
     }
 
     /**
