@@ -51,7 +51,7 @@ public class BabyBeaverModel extends HierarchicalModel<Beaver>
         PartDefinition partdefinition = meshdefinition.getRoot();
 
         PartDefinition beaver = partdefinition.addOrReplaceChild("beaver", CubeListBuilder.create(),
-                PartPose.offset(0.0F, 24.0F, 0.0F));
+                PartPose.offset(0.0F, 24.0F, 3.0F));
 
         PartDefinition body = beaver.addOrReplaceChild("body",
                 CubeListBuilder.create().texOffs(0, 0).addBox(-3.0F, -4.0F, -8.0F, 6.0F, 4.0F, 8.0F,
@@ -66,7 +66,7 @@ public class BabyBeaverModel extends HierarchicalModel<Beaver>
 
         PartDefinition head = body.addOrReplaceChild("head",
                 CubeListBuilder.create().texOffs(20, 12).addBox(-3.0F, -3.25F, -1.5F, 5.0F, 4.0F, 3.0F,
-                        new CubeDeformation(0.0F)).texOffs(28, 7).addBox(-1.5F, -0.5F, -2.0F, 2.0F, 1.0F, 1.0F,
+                        new CubeDeformation(0.0F)).texOffs(28, 7).addBox(-1.5F, -0.75F, -2.0F, 2.0F, 1.0F, 1.0F,
                         new CubeDeformation(0.0F)).texOffs(8, 27).addBox(-1.5F, 0.25F, -1.5F, 2.0F, 1.0F, 0.0F,
                         new CubeDeformation(0.001F)), PartPose.offset(0.5F, -0.25F, -9.5F));
 
@@ -112,8 +112,8 @@ public class BabyBeaverModel extends HierarchicalModel<Beaver>
      * @param pAgeInTicks      The entity's age in ticks, used for time-based animations.
      * @param pNetHeadYaw      The horizontal rotation of the entity's head.
      * @param pHeadPitch       The vertical rotation of the entity's head.
-     *
-     * TODO: #10 Implement Beaver Animations
+     *                         <p>
+     *                                                 TODO: #10 Implement Beaver Animations
      */
     @Override
     public void setupAnim(@Nonnull Beaver pEntity, float pLimbSwing, float pLimbSwingAmount, float pAgeInTicks,

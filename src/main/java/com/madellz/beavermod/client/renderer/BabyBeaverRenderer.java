@@ -20,7 +20,7 @@ public class BabyBeaverRenderer extends MobRenderer<Beaver, BabyBeaverModel>
      */
     public BabyBeaverRenderer(EntityRendererProvider.Context pContext)
     {
-        super(pContext, new BabyBeaverModel(pContext.bakeLayer(ModelLayers.BABY_BEAVER_LAYER)), .25f);
+        super(pContext, new BabyBeaverModel(pContext.bakeLayer(ModelLayers.BABY_BEAVER_LAYER)), .35f);
     }
 
     /**
