@@ -5,6 +5,9 @@ import net.minecraft.client.animation.AnimationDefinition;
 import net.minecraft.client.animation.Keyframe;
 import net.minecraft.client.animation.KeyframeAnimations;
 
+/**
+ * Defines the beaver animations and all of their keyframes
+ */
 public class BeaverAnimationDefinitions
 {
     public static final AnimationDefinition walking = AnimationDefinition.Builder.withLength(
