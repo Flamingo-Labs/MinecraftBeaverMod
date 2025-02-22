@@ -10,7 +10,7 @@ import net.minecraft.client.animation.KeyframeAnimations;
  */
 public class BeaverAnimationDefinitions
 {
-    public static final AnimationDefinition walking = AnimationDefinition.Builder.withLength(
+    public static final AnimationDefinition WALK = AnimationDefinition.Builder.withLength(
             1.3333F).looping().addAnimation("front_left_leg", new AnimationChannel(AnimationChannel.Targets.ROTATION,
             new Keyframe(0.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR),
             new Keyframe(0.3333F, KeyframeAnimations.degreeVec(37.0F, 0.0F, 0.0F),
@@ -55,7 +55,7 @@ public class BeaverAnimationDefinitions
                     new Keyframe(1.3333F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).build();
 
-    public static final AnimationDefinition running = AnimationDefinition.Builder.withLength(
+    public static final AnimationDefinition RUN = AnimationDefinition.Builder.withLength(
             0.6667F).looping().addAnimation("front_left_leg", new AnimationChannel(AnimationChannel.Targets.ROTATION,
             new Keyframe(0.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR),
             new Keyframe(0.1667F, KeyframeAnimations.degreeVec(57.0F, 0.0F, 0.0F),
@@ -100,7 +100,7 @@ public class BeaverAnimationDefinitions
                     new Keyframe(0.6667F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).build();
 
-    public static final AnimationDefinition sitting = AnimationDefinition.Builder.withLength(0.5F).addAnimation("body",
+    public static final AnimationDefinition SIT = AnimationDefinition.Builder.withLength(0.5F).addAnimation("body",
             new AnimationChannel(AnimationChannel.Targets.ROTATION,
                     new Keyframe(0.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR),
@@ -157,7 +157,7 @@ public class BeaverAnimationDefinitions
                     new Keyframe(0.5F, KeyframeAnimations.posVec(0.0F, -0.25F, 0.25F),
                             AnimationChannel.Interpolations.LINEAR))).build();
 
-    public static final AnimationDefinition eating = AnimationDefinition.Builder.withLength(1.25F).addAnimation("body",
+    public static final AnimationDefinition EAT = AnimationDefinition.Builder.withLength(1.25F).addAnimation("body",
             new AnimationChannel(AnimationChannel.Targets.ROTATION,
                     new Keyframe(0.0F, KeyframeAnimations.degreeVec(-42.5F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("body",
@@ -251,7 +251,7 @@ public class BeaverAnimationDefinitions
                     new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, -0.25F, 0.25F),
                             AnimationChannel.Interpolations.LINEAR))).build();
 
-    public static final AnimationDefinition scratch_head = AnimationDefinition.Builder.withLength(1.625F).addAnimation(
+    public static final AnimationDefinition SCRATCH_HEAD = AnimationDefinition.Builder.withLength(1.75F).addAnimation(
             "body", new AnimationChannel(AnimationChannel.Targets.ROTATION,
                     new Keyframe(0.0F, KeyframeAnimations.degreeVec(-42.5F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("body",
@@ -265,7 +265,7 @@ public class BeaverAnimationDefinitions
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1.4167F, KeyframeAnimations.degreeVec(52.0F, -5.6F, 25.9F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.625F, KeyframeAnimations.degreeVec(55.0F, 0.0F, 0.0F),
+                    new Keyframe(1.75F, KeyframeAnimations.degreeVec(55.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("head",
             new AnimationChannel(AnimationChannel.Targets.POSITION,
                     new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F),
@@ -274,7 +274,7 @@ public class BeaverAnimationDefinitions
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1.4167F, KeyframeAnimations.posVec(0.0F, -1.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.625F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F),
+                    new Keyframe(1.75F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("front_left_leg",
             new AnimationChannel(AnimationChannel.Targets.ROTATION,
                     new Keyframe(0.0F, KeyframeAnimations.degreeVec(42.5F, 0.0F, 0.0F),
@@ -283,7 +283,7 @@ public class BeaverAnimationDefinitions
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1.4167F, KeyframeAnimations.degreeVec(-69.6F, -12.4F, 134.4F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.625F, KeyframeAnimations.degreeVec(42.5F, 0.0F, 0.0F),
+                    new Keyframe(1.75F, KeyframeAnimations.degreeVec(42.5F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("front_left_paw",
             new AnimationChannel(AnimationChannel.Targets.ROTATION,
                     new Keyframe(0.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F),
@@ -326,7 +326,7 @@ public class BeaverAnimationDefinitions
                     new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, -0.25F, 0.25F),
                             AnimationChannel.Interpolations.LINEAR))).build();
 
-    public static final AnimationDefinition scratch_belly = AnimationDefinition.Builder.withLength(1.875F).addAnimation(
+    public static final AnimationDefinition SCRATCH_BELLY = AnimationDefinition.Builder.withLength(2.0F).addAnimation(
             "body", new AnimationChannel(AnimationChannel.Targets.ROTATION,
                     new Keyframe(0.0F, KeyframeAnimations.degreeVec(-42.5F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR),
@@ -334,7 +334,7 @@ public class BeaverAnimationDefinitions
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1.5833F, KeyframeAnimations.degreeVec(-60.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.875F, KeyframeAnimations.degreeVec(-42.5F, 0.0F, 0.0F),
+                    new Keyframe(2.0F, KeyframeAnimations.degreeVec(-42.5F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("body",
             new AnimationChannel(AnimationChannel.Targets.POSITION,
                     new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, -2.0F, 0.0F),
@@ -346,7 +346,7 @@ public class BeaverAnimationDefinitions
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1.5833F, KeyframeAnimations.degreeVec(87.5F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.875F, KeyframeAnimations.degreeVec(55.0F, 0.0F, 0.0F),
+                    new Keyframe(2.0F, KeyframeAnimations.degreeVec(55.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("head",
             new AnimationChannel(AnimationChannel.Targets.POSITION,
                     new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F),
@@ -355,7 +355,7 @@ public class BeaverAnimationDefinitions
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1.5833F, KeyframeAnimations.posVec(0.0F, -1.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.875F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F),
+                    new Keyframe(2.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("front_left_leg",
             new AnimationChannel(AnimationChannel.Targets.ROTATION,
                     new Keyframe(0.0F, KeyframeAnimations.degreeVec(42.5F, 0.0F, 0.0F),
@@ -370,14 +370,14 @@ public class BeaverAnimationDefinitions
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1.5833F, KeyframeAnimations.degreeVec(58.3F, -9.7F, 57.1F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.875F, KeyframeAnimations.degreeVec(42.5F, 0.0F, 0.0F),
+                    new Keyframe(2.0F, KeyframeAnimations.degreeVec(42.5F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("front_left_leg",
             new AnimationChannel(AnimationChannel.Targets.POSITION,
                     new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(0.4167F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.5F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.875F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F),
+                    new Keyframe(2.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("front_left_paw",
             new AnimationChannel(AnimationChannel.Targets.ROTATION,
                     new Keyframe(0.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F),
@@ -386,7 +386,7 @@ public class BeaverAnimationDefinitions
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1.5833F, KeyframeAnimations.degreeVec(85.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.875F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F),
+                    new Keyframe(2.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("front_right_leg",
             new AnimationChannel(AnimationChannel.Targets.ROTATION,
                     new Keyframe(0.0F, KeyframeAnimations.degreeVec(42.5F, 0.0F, 0.0F),
@@ -401,14 +401,14 @@ public class BeaverAnimationDefinitions
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1.5833F, KeyframeAnimations.degreeVec(58.3F, 9.7F, -57.1F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.875F, KeyframeAnimations.degreeVec(42.5F, 0.0F, 0.0F),
+                    new Keyframe(2.0F, KeyframeAnimations.degreeVec(42.5F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("front_right_leg",
             new AnimationChannel(AnimationChannel.Targets.POSITION,
                     new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(0.4167F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.5F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.875F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F),
+                    new Keyframe(2.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("front_right_paw",
             new AnimationChannel(AnimationChannel.Targets.ROTATION,
                     new Keyframe(0.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F),
@@ -417,7 +417,7 @@ public class BeaverAnimationDefinitions
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1.5833F, KeyframeAnimations.degreeVec(85.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.875F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F),
+                    new Keyframe(2.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("back_right_leg",
             new AnimationChannel(AnimationChannel.Targets.ROTATION,
                     new Keyframe(0.0F, KeyframeAnimations.degreeVec(42.5F, 0.0F, 0.0F),
@@ -426,7 +426,7 @@ public class BeaverAnimationDefinitions
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1.5833F, KeyframeAnimations.degreeVec(59.8F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.875F, KeyframeAnimations.degreeVec(42.5F, 0.0F, 0.0F),
+                    new Keyframe(2.0F, KeyframeAnimations.degreeVec(42.5F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("back_right_leg",
             new AnimationChannel(AnimationChannel.Targets.POSITION,
                     new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 1.5F, -1.5F),
@@ -435,7 +435,7 @@ public class BeaverAnimationDefinitions
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1.5833F, KeyframeAnimations.posVec(0.0F, 1.5F, -1.0F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.875F, KeyframeAnimations.posVec(0.0F, 1.5F, -1.5F),
+                    new Keyframe(2.0F, KeyframeAnimations.posVec(0.0F, 1.5F, -1.5F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("back_left_leg",
             new AnimationChannel(AnimationChannel.Targets.ROTATION,
                     new Keyframe(0.0F, KeyframeAnimations.degreeVec(42.5F, 0.0F, 0.0F),
@@ -444,7 +444,7 @@ public class BeaverAnimationDefinitions
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1.5833F, KeyframeAnimations.degreeVec(59.8F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.875F, KeyframeAnimations.degreeVec(42.5F, 0.0F, 0.0F),
+                    new Keyframe(2.0F, KeyframeAnimations.degreeVec(42.5F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("back_left_leg",
             new AnimationChannel(AnimationChannel.Targets.POSITION,
                     new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 1.5F, -1.5F),
@@ -453,7 +453,7 @@ public class BeaverAnimationDefinitions
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1.5833F, KeyframeAnimations.posVec(0.0F, 1.5F, -1.0F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.875F, KeyframeAnimations.posVec(0.0F, 1.5F, -1.5F),
+                    new Keyframe(2.0F, KeyframeAnimations.posVec(0.0F, 1.5F, -1.5F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("tail",
             new AnimationChannel(AnimationChannel.Targets.ROTATION,
                     new Keyframe(0.0F, KeyframeAnimations.degreeVec(-122.5F, 0.0F, 0.0F),
@@ -462,16 +462,16 @@ public class BeaverAnimationDefinitions
                             AnimationChannel.Interpolations.LINEAR),
                     new Keyframe(1.5833F, KeyframeAnimations.degreeVec(-105.0F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR),
-                    new Keyframe(1.875F, KeyframeAnimations.degreeVec(-122.5F, 0.0F, 0.0F),
+                    new Keyframe(2.0F, KeyframeAnimations.degreeVec(-122.5F, 0.0F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("tail",
             new AnimationChannel(AnimationChannel.Targets.POSITION,
                     new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, -0.25F, 0.25F),
                             AnimationChannel.Interpolations.LINEAR))).build();
 
-    public static final AnimationDefinition swimming = AnimationDefinition.Builder.withLength(
-            1.5F).looping().addAnimation("beaver", new AnimationChannel(AnimationChannel.Targets.POSITION,
-            new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F),
-                    AnimationChannel.Interpolations.LINEAR))).addAnimation("head",
+    public static final AnimationDefinition SWIM = AnimationDefinition.Builder.withLength(1.5F).looping().addAnimation(
+            "beaver", new AnimationChannel(AnimationChannel.Targets.POSITION,
+                    new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F),
+                            AnimationChannel.Interpolations.LINEAR))).addAnimation("head",
             new AnimationChannel(AnimationChannel.Targets.POSITION,
                     new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.5F, 0.0F),
                             AnimationChannel.Interpolations.LINEAR))).addAnimation("front_left_leg",
